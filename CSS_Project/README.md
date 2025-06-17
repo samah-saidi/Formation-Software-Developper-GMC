@@ -1,61 +1,43 @@
-# 🌐 Mon Portfolio Web (HTML)
+# 📁 Mon Portfolio Web Personnel
 
-Bienvenue dans mon projet de portfolio web réalisé en **HTML pur**, sans CSS ni JavaScript.  
-Ce site présente mes informations personnelles, mes projets, mon parcours académique et professionnel, ainsi qu’un formulaire de contact.  
+Bienvenue dans mon portfolio personnel développé en **HTML5** et **CSS3**.  
+Ce site vitrine présente mes projets, mon parcours académique et professionnel ainsi que mes compétences dans le domaine du développement web et de la data science.
+
+---
+
+## 📸 Aperçu
+
+![Aperçu du portfolio](assets/images/cv.jpg)
+
+---
+
+## 📑 Contenu du projet
+
+Le portfolio se compose des sections suivantes :
+
+- **Home** : Page d'accueil et introduction.
+- **About** : Présentation personnelle avec photo, vidéo et audio.
+- **Work** : Liste de projets réalisés avec captures et vidéos.
+- **Resume** : Parcours académique, expériences professionnelles et certifications.
+- **Contact** : Formulaire de contact fonctionnel en HTML.
+
 
 ---
 ## 📂 Structure du projet
 ```bash
-/assets
-├── /images
-│ ├── portfolio.jpg
-│ ├── cv.jpg
-│ └── app_web.jpg
-└── /media
-└── test.mp3
-index.html
-README.md
+portfolio/
+├── index.html
+├── style.css
+├── assets/
+│   ├── images/
+│   │   ├── portfolio.jpg
+│   │   ├── cv.jpg
+│   │   └── app_web.jpg
+│   └── media/
+│       └── test.mp3
+
 ```
 
-## 📑 Contenu de la page
-
-### 📌 Navbar
-- Accès rapide aux différentes sections de la page :
-  - Home
-  - About
-  - Work
-  - Resume
-  - Contact
-
-### 📌 Home
-- Message d'accueil sur mon portfolio.
-
-### 📌 About Me
-- Présentation personnelle sous forme de paragraphe.
-- 📷 Image de profil.
-- 🎥 Vidéo de présentation intégrée depuis YouTube.
-- 🎵 Extrait audio disponible en lecture.
-
-### 📌 Mes Réalisations (Work)
-- Présentation de projets :
-  1. **Site Web de Portfolio** avec image de capture.
-  2. **Application Mobile** avec démonstration vidéo YouTube.
-  3. **Application de Data Visualisation** avec image illustrative.
-
-### 📌 Mon Parcours (Resume)
-- **Formation** : détail de mon cursus académique.
-- **Expériences Professionnelles** : stages et projets.
-- **Certifications** obtenues.
-
-### 📌 Contact
-- Formulaire HTML avec :
-  - Champ pour le nom.
-  - Champ pour l'email.
-  - Champ de message.
-  - Bouton *Envoyer* et *Annuler*.
-
-### 📌 Footer
-- Mentions de copyright.
 
 ---
 
