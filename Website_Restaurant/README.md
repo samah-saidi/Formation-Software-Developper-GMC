@@ -18,20 +18,20 @@ Bienvenue sur le projet **Restaurant Gourmet**, une landing page responsive et m
 
 ## 📸 Aperçu du site
 
-| Page d'accueil | 
+# Page d'accueil 
 
-| ![Capture 1](images/capture1.png) |
+ ![Capture 1](images/capture1.png) 
 
-|Section Menu |
+# Section Menu 
 
-| ![Capture 2](images/capture2.png) |
+ ![Capture 2](images/capture2.png) 
 
-| Section About | 
-| ![Capture 3](images/capture3.png) |
+# Section About 
+ ![Capture 3](images/capture3.png) 
 
-|Section Contact |
+# Section Contact 
 
-| ![Capture 4](images/capture4.png) |
+ ![Capture 4](images/capture4.png) 
 
 ---
 
