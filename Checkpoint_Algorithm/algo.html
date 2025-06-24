@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Analyse de Phrase</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      resize: vertical;
+      padding: 12px;
+      font-size: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+
+    textarea:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    button {
+      display: inline-block;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .resultat {
+      margin-top: 25px;
+      background-color: #e9f7ef;
+      padding: 20px;
+      border-left: 6px solid #28a745;
+      border-radius: 8px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .resultat strong {
+      color: #28a745;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📝 Analyse de Phrase</h2>
+
+  <label for="phrase">Entrez une phrase (se terminant par un point) :</label>
+  <textarea id="phrase" placeholder="Ex: Bonjour tout le monde."></textarea>
+  <button onclick="analyserPhrase()">Analyser</button>
+
+  <div class="resultat" id="resultat"></div>
+
+  <script>
+    function analyserPhrase() {
+      let phrase = document.getElementById("phrase").value;
+      let longueur = 0;
+      let nbMots = 0;
+      let nbVoyelles = 0;
+      let precedentEstEspace = true;
+
+      for (let i = 0; i < phrase.length; i++) {
+        let car = phrase[i];
+        longueur++;
+
+        if ("aeiouAEIOU".includes(car)) {
+          nbVoyelles++;
+        }
+
+        if (car !== ' ') {
+          if (precedentEstEspace) {
+            nbMots++;
+          }
+          precedentEstEspace = false;
+        } else {
+          precedentEstEspace = true;
+        }
+
+        if (car === '.') {
+          break;
+        }
+      }
+
+      let result = `
+        <strong>✅ Résultats :</strong><br>
+        📏 Longueur de la phrase : <b>${longueur}</b><br>
+        📖 Nombre de mots : <b>${nbMots}</b><br>
+        🔤 Nombre de voyelles : <b>${nbVoyelles}</b>
+      `;
+      document.getElementById("resultat").innerHTML = result;
+    }
+  </script>
+
+</body>
+</html>

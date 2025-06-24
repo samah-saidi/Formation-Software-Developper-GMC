@@ -1,0 +1,43 @@
+Algorithme AnalysePhrase
+// Variables
+Var
+    car : caractère
+    longueur, nbMots, nbVoyelles : entier
+    precedentEstEspace : booléen
+
+Début
+    longueur ← 0
+    nbMots ← 0
+    nbVoyelles ← 0
+    precedentEstEspace ← vrai 
+
+    Ecrire("Entrez une phrase se terminant par un point :")
+    
+    // Lecture caractère par caractère jusqu'au point
+    Répéter
+        Lire(car)
+        longueur ← longueur + 1
+
+        // Vérification des voyelles
+        Si car = 'a' ou car = 'e' ou car = 'i' ou car = 'o' ou car = 'u' ou
+           car = 'A' ou car = 'E' ou car = 'I' ou car = 'O' ou car = 'U' Alors
+            nbVoyelles ← nbVoyelles + 1
+        FinSi
+
+        // Comptage des mots : un mot commence après un espace
+        Si car ≠ ' ' Alors
+            Si precedentEstEspace Alors
+                nbMots ← nbMots + 1
+            FinSi
+            precedentEstEspace ← faux
+        Sinon
+            precedentEstEspace ← vrai
+        FinSi
+    Jusqu'à car = '.'
+
+    // Affichage des résultats
+    Ecrire("Longueur de la phrase : ", longueur)
+    Ecrire("Nombre de mots : ", nbMots)
+    Ecrire("Nombre de voyelles : ", nbVoyelles)
+
+Fin
