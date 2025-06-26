@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Calcul Produit Scalaire et Orthogonalité</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 10px;
+      display: block;
+      color: #34495e;
+    }
+
+    input[type="number"], input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #2980b9;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #3498db;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    .error {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <h1>Produit Scalaire et Orthogonalité</h1>
+
+  <label for="size">Taille des vecteurs :</label>
+  <input type="number" id="size" min="1" max="20" value="3" />
+
+  <label for="v1">Vecteur v1 (séparez les nombres par des espaces) :</label>
+  <input type="text" id="v1" placeholder="Exemple: 1 0 -1" />
+
+  <label for="v2">Vecteur v2 (séparez les nombres par des espaces) :</label>
+  <input type="text" id="v2" placeholder="Exemple: 0 1 0" />
+
+  <button id="calcBtn">Calculer Produit Scalaire</button>
+
+  <div id="result"></div>
+
+  <script>
+    function dotProduct(v1, v2) {
+      let ps = 0;
+      for (let i = 0; i < v1.length; i++) {
+        ps += v1[i] * v2[i];
+      }
+      return ps;
+    }
+
+    document.getElementById('calcBtn').addEventListener('click', () => {
+      const size = parseInt(document.getElementById('size').value);
+      const v1Str = document.getElementById('v1').value.trim();
+      const v2Str = document.getElementById('v2').value.trim();
+      const resultDiv = document.getElementById('result');
+
+      // Convert strings to arrays
+      const v1 = v1Str.split(/\s+/).map(Number);
+      const v2 = v2Str.split(/\s+/).map(Number);
+
+      // Validation
+      if (v1.length !== size || v2.length !== size) {
+        resultDiv.innerHTML = `<span class="error">Erreur: Le nombre d'éléments doit être égal à la taille ${size}.</span>`;
+        return;
+      }
+      if (v1.some(isNaN) || v2.some(isNaN)) {
+        resultDiv.innerHTML = `<span class="error">Erreur: Veuillez entrer uniquement des nombres valides.</span>`;
+        return;
+      }
+
+      // Calcul produit scalaire
+      const ps = dotProduct(v1, v2);
+
+      // Affichage résultat
+      let message = `Produit scalaire = ${ps}.<br/>`;
+      message += (ps === 0) 
+        ? "Les vecteurs sont orthogonaux."
+        : "Les vecteurs ne sont pas orthogonaux.";
+
+      resultDiv.innerHTML = message;
+    });
+  </script>
+</body>
+</html>

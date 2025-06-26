@@ -1,0 +1,52 @@
+Procedure dot_product_proc(v1, v2, n, ps)
+    ps ← 0
+    For i from 0 to n-1 do
+        ps ← ps + v1[i] * v2[i]
+    End For
+End Procedure
+
+Function dot_product_func(v1, v2, n) returns ps
+    ps ← 0
+    For i from 0 to n-1 do
+        ps ← ps + v1[i] * v2[i]
+    End For
+    Return ps
+End Function
+
+Algorithm main
+    Declare n, size, i, j, ps, choice
+    Declare v1[100], v2[100]
+
+    Write "Enter number of vector pairs:"
+    Read n
+
+    Write "Enter size of vectors:"
+    Read size
+
+    Write "Choose version (1=procedure, 2=fonction):"
+    Read choice
+
+    For i from 1 to n do
+        Write "Enter vector v1 (pair ", i, "):"
+        For j from 0 to size-1 do
+            Read v1[j]
+        End For
+
+        Write "Enter vector v2 (pair ", i, "):"
+        For j from 0 to size-1 do
+            Read v2[j]
+        End For
+
+        If choice = 1 then
+            Call dot_product_proc(v1, v2, size, ps)
+        Else
+            ps ← dot_product_func(v1, v2, size)
+        End If
+
+        If ps = 0 then
+            Write "Vectors ", i, " are orthogonal."
+        Else
+            Write "Vectors ", i, " are NOT orthogonal."
+        End If
+    End For
+End Algorithm

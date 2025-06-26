@@ -1,0 +1,21 @@
+Algorithm SumDistinctElements
+Input: Two arrays A and B
+Output: Sum of distinct elements
+
+Begin
+    sum ← 0
+
+    For each element in A do
+        if element not in B then
+            sum ← sum + element
+        end if
+    End For
+
+    For each element in B do
+        if element not in A then
+            sum ← sum + element
+        end if
+    End For
+
+    Display sum
+End
