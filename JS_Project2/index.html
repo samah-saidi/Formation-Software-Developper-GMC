@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkpoint JavaScript 📚</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .section {
+      background: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .result {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📝 Checkpoint JavaScript</h1>
+
+<div class="section">
+  <h3>1️⃣ Inverser une chaîne</h3>
+  <input type="text" id="reverseInput" placeholder="Entrez une chaîne">
+  <button onclick="reverseString()">Inverser</button>
+  <div class="result" id="reverseResult"></div>
+</div>
+
+<div class="section">
+  <h3>2️⃣ Compter les caractères</h3>
+  <input type="text" id="countInput" placeholder="Entrez une chaîne">
+  <button onclick="countCharacters()">Compter</button>
+  <div class="result" id="countResult"></div>
+</div>
+
+<div class="section">
+  <h3>3️⃣ Capitaliser chaque mot</h3>
+  <input type="text" id="capitalizeInput" placeholder="Entrez une phrase">
+  <button onclick="capitalizeWords()">Capitaliser</button>
+  <div class="result" id="capitalizeResult"></div>
+</div>
+
+<div class="section">
+  <h3>4️⃣ Maximum et Minimum d’un tableau</h3>
+  <input type="text" id="arrayInput" placeholder="Ex: 3,7,2,9,4">
+  <button onclick="findMaxMin()">Trouver</button>
+  <div class="result" id="arrayResult"></div>
+</div>
+
+<div class="section">
+  <h3>5️⃣ Somme d’un tableau</h3>
+  <input type="text" id="sumInput" placeholder="Ex: 1,2,3,4">
+  <button onclick="sumArray()">Calculer</button>
+  <div class="result" id="sumResult"></div>
+</div>
+
+<div class="section">
+  <h3>6️⃣ Filtrer les valeurs supérieures à 5</h3>
+  <input type="text" id="filterInput" placeholder="Ex: 1,6,3,8,2">
+  <button onclick="filterArray()">Filtrer</button>
+  <div class="result" id="filterResult"></div>
+</div>
+
+<div class="section">
+  <h3>7️⃣ Factorielle</h3>
+  <input type="number" id="factorialInput" placeholder="Ex: 5">
+  <button onclick="factorial()">Calculer</button>
+  <div class="result" id="factorialResult"></div>
+</div>
+
+<div class="section">
+  <h3>8️⃣ Nombre premier ?</h3>
+  <input type="number" id="primeInput" placeholder="Ex: 7">
+  <button onclick="isPrime()">Vérifier</button>
+  <div class="result" id="primeResult"></div>
+</div>
+
+<div class="section">
+  <h3>9️⃣ Suite de Fibonacci</h3>
+  <input type="number" id="fibonacciInput" placeholder="Nombre de termes">
+  <button onclick="fibonacci()">Générer</button>
+  <div class="result" id="fibonacciResult"></div>
+</div>
+
+<script>
+  function reverseString() {
+    let str = document.getElementById("reverseInput").value;
+    let result = str.split('').reverse().join('');
+    document.getElementById("reverseResult").textContent = result;
+  }
+
+  function countCharacters() {
+    let str = document.getElementById("countInput").value;
+    document.getElementById("countResult").textContent = str.length;
+  }
+
+  function capitalizeWords() {
+    let sentence = document.getElementById("capitalizeInput").value;
+    let result = sentence.split(' ').map(word =>
+      word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
+    document.getElementById("capitalizeResult").textContent = result;
+  }
+
+  function findMaxMin() {
+    let arr = document.getElementById("arrayInput").value.split(',').map(Number);
+    let max = Math.max(...arr);
+    let min = Math.min(...arr);
+    document.getElementById("arrayResult").textContent = `Max: ${max}, Min: ${min}`;
+  }
+
+  function sumArray() {
+    let arr = document.getElementById("sumInput").value.split(',').map(Number);
+    let sum = arr.reduce((acc, val) => acc + val, 0);
+    document.getElementById("sumResult").textContent = sum;
+  }
+
+  function filterArray() {
+    let arr = document.getElementById("filterInput").value.split(',').map(Number);
+    let result = arr.filter(num => num > 5);
+    document.getElementById("filterResult").textContent = result.join(', ');
+  }
+
+  function factorial() {
+    let n = parseInt(document.getElementById("factorialInput").value);
+    function fact(x) {
+      if (x === 0) return 1;
+      return x * fact(x - 1);
+    }
+    document.getElementById("factorialResult").textContent = fact(n);
+  }
+
+  function isPrime() {
+    let n = parseInt(document.getElementById("primeInput").value);
+    if (n < 2) {
+      document.getElementById("primeResult").textContent = "Non";
+      return;
+    }
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        document.getElementById("primeResult").textContent = "Non";
+        return;
+      }
+    }
+    document.getElementById("primeResult").textContent = "Oui";
+  }
+
+  function fibonacci() {
+    let n = parseInt(document.getElementById("fibonacciInput").value);
+    let sequence = [0, 1];
+    for (let i = 2; i < n; i++) {
+      sequence.push(sequence[i - 1] + sequence[i - 2]);
+    }
+    document.getElementById("fibonacciResult").textContent = sequence.slice(0, n).join(', ');
+  }
+</script>
+
+</body>
+</html>
