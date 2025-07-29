@@ -4,7 +4,7 @@ Une galerie produit élégante avec mode clair/sombre et animations fluides, dé
 
 ![Screenshot de la galerie](result.png)
 
-![Screenshot de la galerie](result1.png)
+![Screenshot de la galerie](result2.png)
 
 # ✨ Features
 
@@ -71,7 +71,8 @@ Optimized image loading
 Checpoint_Layout-Int-AI
 ├── index.html          # Main HTML file / CSS / JS
 ├── README.md
-└── result.png          # Screenshot of the gallery
+├── result.png          # Screenshot of the gallery
+└── result1.png          # Screenshot of the gallery
 ```
 
 # 💡 Customization Tips
