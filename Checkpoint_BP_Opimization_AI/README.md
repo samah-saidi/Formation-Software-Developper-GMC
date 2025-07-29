@@ -119,8 +119,9 @@ document.getElementById('cards-container').appendChild(createPricingCard(cardDat
 ### 🖼️ Résultat visuel
 
 
-|---------|--------|
-| ![Aperçu Desktop](result.png) | ![Aperçu Mobile](result2.png) |
+![Aperçu Desktop](result.png) 
+
+![Aperçu Mobile](result2.png) 
 
 ## 🧪 Tester le composant
 1. 🖥️ Ouvrez `pricing-card.html` dans votre navigateur.
