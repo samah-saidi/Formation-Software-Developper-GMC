@@ -37,3 +37,11 @@ AI_Powered_Vibe_Coding_Checkpoint/
 - `index.html` – Exported and manually edited HTML file
 - `result.png` – Screenshot of the final landing page
 - `README.md` – Description and documentation for this checkpoint
+
+## Auteur
+
+👩‍💻 Samah Saidi - Développeur Data Science
+
+📧 Contact: samah.saidi@polytechnicien.tn
+
+🔗 GitHub: https://github.com/samah-saidi
