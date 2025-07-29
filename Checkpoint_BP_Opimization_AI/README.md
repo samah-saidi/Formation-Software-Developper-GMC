@@ -118,7 +118,7 @@ document.getElementById('cards-container').appendChild(createPricingCard(cardDat
 
 ### 🖼️ Résultat visuel
 
-| Desktop | Mobile |
+
 |---------|--------|
 | ![Aperçu Desktop](result.png) | ![Aperçu Mobile](result2.png) |
 
