@@ -9,6 +9,7 @@ Movie Explorer is a simple web application that allows users to discover and sea
 - Responsive UI with interactive movie cards
 - Color-coded ratings for quick visual feedback
 
+![Aperçu ](result.png) 
 
 ## Getting Started
 
