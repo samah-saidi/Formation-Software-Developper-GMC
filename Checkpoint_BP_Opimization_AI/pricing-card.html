@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.pricing-card {
+  max-width: 350px;
+  margin: 2rem auto;
+  background-color: #fff;
+  box-shadow: 0 0 16px #ccc;
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  transition: box-shadow 0.2s;
+}
+.pricing-card:hover {
+  box-shadow: 0 4px 24px #bbb;
+}
+.pricing-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.pricing-price {
+  font-size: 18px;
+  color: green;
+  margin-bottom: 16px;
+}
+.pricing-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.pricing-features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+.pricing-btn {
+  background: blue;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background 0.2s;
+}
+.pricing-btn:hover {
+  background: darkblue;
+}
+@media (max-width: 500px) {
+  .pricing-card {
+    max-width: 95vw;
+    padding: 16px 6vw;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="cards-container"></div>
+
+<script>
+// Composant réutilisable de carte de tarification
+function createPricingCard({ title, price, features, buttonText, onButtonClick }) {
+  const card = document.createElement('div');
+  card.className = 'pricing-card';
+
+  card.innerHTML = `
+    <h2 class="pricing-title">${title}</h2>
+    <p class="pricing-price">${price}</p>
+    <ul class="pricing-features">
+      ${features.map(f => `<li>${f}</li>`).join('')}
+    </ul>
+    <button class="pricing-btn">${buttonText}</button>
+  `;
+
+  const btn = card.querySelector('.pricing-btn');
+  if (onButtonClick) {
+    btn.addEventListener('click', onButtonClick);
+  }
+
+  return card;
+}
+
+// Exemple d'utilisation
+const cardData = {
+  title: 'Basic Plan',
+  price: '$9.99 /month',
+  features: ['1 GB Storage', 'Basic Support', 'All Core Features'],
+  buttonText: 'Start Trial',
+  onButtonClick: () => alert('Trial started!')
+};
+
+document.getElementById('cards-container').appendChild(createPricingCard(cardData));
+</script>
+
+</body>
+</html>
