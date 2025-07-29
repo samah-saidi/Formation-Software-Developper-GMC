@@ -48,8 +48,7 @@ Ce projet est une application React simple réalisée dans le cadre du checkpoin
    ```bash
    npm start
    ```
-8. **Le resultat afficher**
-![resultat ](assets/images/result.png) 
+
 
 ## 🗂️ Structure des fichiers
 - `src/App.js` : Composant principal avec la Navbar, le heading et les cards
