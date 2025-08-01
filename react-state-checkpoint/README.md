@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 🚀 React State Checkpoint
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est réalisé dans le cadre du checkpoint **"React State"** de la formation **GoMyCode**.  
+Il met en œuvre les concepts clés de **React (Class Components, State, Lifecycle)**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Objectifs du projet
 
-### `npm start`
+- ✅ Créer un composant React basé sur une **classe**
+- ✅ Définir un **état (state)** contenant un objet `Person`
+- ✅ Ajouter un **bouton** pour afficher / cacher le profil
+- ✅ Afficher le **temps écoulé ⏱️** depuis le montage du composant (via `componentDidMount`)
+- ✅ Appliquer un **style moderne** avec CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 👤 Profil affiché
 
-### `npm test`
+- **👩 Nom** : Samah SAIDI  
+- **🧠 Bio** : Ingénieure logicielle spécialisée en React, passionnée par la résolution de problèmes complexes.  
+- **💼 Profession** : Développeuse Software  
+- **🖼️ Photo** :  
+  ![Profil](https://randomuser.me/api/portraits/women/65.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Démarrage du projet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+    git clone <repo-url>
+    cd react-state-checkpoint
+    npm install
+    npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🛠️ Fichiers importants
+src/App.js
+Contient le composant App en classe, la logique d'état, le toggle d'affichage et le compteur.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+src/App.css
+Gère le style de l'application, avec un design moderne pour la carte profil, le bouton, et le compteur.
 
-### `npm run eject`
+📸 Aperçu
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Aperçu ](./src/result.png) 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧠 Concepts utilisés
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+class Component
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+this.state & this.setState
 
-## Learn More
+componentDidMount, componentWillUnmount
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+setInterval, clearInterval
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+JSX conditionnel ({shows && (...)})
 
-### Code Splitting
+## 👩‍💻 Auteur
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Samah Saidi - Développeur Data Science
 
-### Analyzing the Bundle Size
+📧 Contact: samah.saidi@polytechnicien.tn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔗 GitHub: https://github.com/samah-saidi
