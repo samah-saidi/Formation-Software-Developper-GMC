@@ -6,16 +6,16 @@ Here's a complete implementation of the Movie App using React Hooks as per your 
 ## 📸 Screenshots
 
 ### 🖼️ Interface Principale
-![Interface Principale](./src/images/result2.png.png)
+![Interface Principale](./src/images/result2.png)
 
 ### ✨ Ajout de Film
-![Modal d'Ajout](./src/images/add_movie.png.png)
+![Modal d'Ajout](./src/images/add_movie.png)
 
 ### 🔍 Filtrage par Titre
-![Filtre par Titre](./src/images/filter_by_title.png.png)
+![Filtre par Titre](./src/images/filter_by_title.png)
 
 ### ⭐ Filtrage par Note
-![Filtre par Note](./src/images/filter_rating.png.png)
+![Filtre par Note](./src/images/filter_rating.png)
 
 ## ✨ Features
 
