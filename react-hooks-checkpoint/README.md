@@ -37,7 +37,7 @@ Here's a complete implementation of the Movie App using React Hooks as per your 
 
 ```bash
 git clone https://github.com/samah-saidi/Formation-Software-Developper-GMC/tree/main/react-hooks-checkpoint
-cd movie-app
+cd react-hooks-checkpoint
 ```
 
 2. Install dependencies
