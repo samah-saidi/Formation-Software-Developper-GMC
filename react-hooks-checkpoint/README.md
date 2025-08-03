@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# 🎬 Movie App with React Hooks - Checkpoint Solution
+Here's a complete implementation of the Movie App using React Hooks as per your checkpoint requirements:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Application Complète](./src/images/result.png)
 
-## Available Scripts
+## 📸 Screenshots
 
-In the project directory, you can run:
+### 🖼️ Interface Principale
+![Interface Principale](./src/images/result2.png.png)
 
-### `npm start`
+### ✨ Ajout de Film
+![Modal d'Ajout](./src/images/add_movie.png.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔍 Filtrage par Titre
+![Filtre par Titre](./src/images/filter_by_title.png.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### ⭐ Filtrage par Note
+![Filtre par Note](./src/images/filter_rating.png.png)
 
-### `npm test`
+## ✨ Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🎥 Display movie cards with beautiful UI
 
-### `npm run build`
+🔍 Filter movies by title and rating
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+➕ Add new movies via modal form
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+⚛️ Full React Hooks implementation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🌈 Responsive design with React Bootstrap
 
-### `npm run eject`
+🛡️ PropTypes validation for all components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/your-username/movie-app.git
+cd movie-app
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Start the development server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+4. Start the development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+http://localhost:3000
+```
+## Project Structure
 
-### Analyzing the Bundle Size
+```bash
+src/
+├── components/
+│   ├── MovieCard.js
+│   ├── MovieList.js
+│   └── Filter.js
+├── App.js
+└── index.js
+```
+## 🧩 Components
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### MovieCard
 
-### Making a Progressive Web App
+Displays individual movie information
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Shows poster, title, description and rating
 
-### Advanced Configuration
+Responsive card design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### MovieList
+Renders grid of movie cards
 
-### Deployment
+Handles the display of filtered movies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Filter
+Title search functionality
 
-### `npm run build` fails to minify
+Rating filter with slider
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Real-time filtering
+
+#### AddMovie
+
+Modal form for new movies
+
+Input validation
+
+Image URL preview
+
+
+## 👩‍💻 Auteur
+
+Samah Saidi - Développeur Data Science
+
+📧 Contact: samah.saidi@polytechnicien.tn
+
+🔗 GitHub: https://github.com/samah-saidi
