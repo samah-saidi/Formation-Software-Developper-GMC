@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🧠 React Debug Checkpoint
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **React Debug Checkpoint App**!  
+This simple React application was purposefully built with bugs and used as a playground to explore **React Developer Tools** and practice **debugging** real-world issues in React.
 
-## Available Scripts
+## 🚀 Purpose
 
-In the project directory, you can run:
+This project was part of a debugging checkpoint designed to:
 
-### `npm start`
+- Analyze and fix common bugs in React components
+- Understand state and props flow
+- Use React Developer Tools effectively
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔍 Debug Process Overview
 
-### `npm test`
+### 1. Initial Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Created with `create-react-app`
+- Includes:
+  - A `Counter` component with state
+  - A `Profile` component that receives `user` props
 
-### `npm run build`
+### 2. Bugs Discovered
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Component | Bug | Fix |
+|----------|-----|-----|
+| Profile.js | `user.nam` used instead of `user.name` | Corrected prop name |
+| General | No prop validation | Added `PropTypes` to validate props |
+| Counter | Edge cases not handled | Optional improvements added |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Tools Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🔧 **React Developer Tools** (Chrome Extension)
+- 🧪 Console for debugging messages
+- 🧰 Manual inspection of props/state in the Components panel
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✅ Final State
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+After debugging:
+- All components render correctly
+- Props and state are accurately tracked
+- No console errors
+- The app is functionally correct
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 File Structure
 
-## Learn More
+```bash
+react-debugging-checkpoint/
+├── public/
+├── src/
+│ ├── components/
+│ │ ├── Counter.js
+│ │ └── Profile.js
+│ ├── App.js
+│ └── index.js
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👩‍💻 Auteur
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Samah Saidi - Développeur Data Science
 
-### Code Splitting
+📧 Contact: samah.saidi@polytechnicien.tn
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔗 GitHub: https://github.com/samah-saidi
