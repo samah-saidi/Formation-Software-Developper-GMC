@@ -1,0 +1,33 @@
+/* Style pour le conteneur de défilement horizontal */
+.movie-list-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+/* Conteneur des cartes en ligne */
+.movie-list-horizontal {
+  display: inline-flex;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Style de la barre de défilement */
+.movie-list-scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.movie-list-scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.movie-list-scroll-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.movie-list-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
