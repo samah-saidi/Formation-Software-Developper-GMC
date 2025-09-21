@@ -18,7 +18,7 @@ On utilise [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) pour af
 
 Voici un aperçu du rendu final de l’application :  
 
-![Résultat](result.png)
+![Résultat](public/result.png)
 
 ---
 
