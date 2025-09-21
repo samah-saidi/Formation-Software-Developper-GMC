@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 🚀 API Checkpoint – React User List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un petit exercice pour pratiquer **React** avec une API externe.  
+On utilise [JSONPlaceholder](https://jsonplaceholder.typicode.com/users) pour afficher une liste d’utilisateurs.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Fonctionnalités
+✅ Créé avec **create-react-app**  
+✅ Récupération des données via **Axios**  
+✅ Affichage des utilisateurs dans une **liste stylée**  
+✅ Composants React avec **useState** et **useEffect**  
+✅ Styles avec **CSS personnalisé** (UserList.css)  
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖼️ Résultat
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Voici un aperçu du rendu final de l’application :  
 
-### `npm test`
+![Résultat](result.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Structure du projet
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+api-checkpoint/
+├── src/
+│ ├── App.js
+│ ├── UserList.js
+│ ├── UserList.css
+│ ├── index.js
+│ └── ...
+├── public/
+│ └── result.png # Capture d'écran de l'app
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚡ Installation & Lancement
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone le projet :
+```bash
+   git clone https://github.com/ton-repo/api-checkpoint.git
+   cd api-checkpoint
+```
+2. Installe les dépendances :
+```bash 
+    npm install
+```
+3. Lance l’application :
+```bash 
+    npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Ouvre http://localhost:3000 dans ton navigateur 🌐
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Technologies utilisées
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+⚛️ React
 
-## Learn More
+📡 Axios
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🎨 CSS3
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎯 Objectif pédagogique
 
-### Code Splitting
+Comprendre comment consommer une API avec React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Manipuler useState et useEffect
 
-### Analyzing the Bundle Size
+Afficher et styler une liste d’éléments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 👩‍💻 Auteur
 
-### Making a Progressive Web App
+Samah Saidi - Développeur Data Science
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📧 Contact: samah.saidi@polytechnicien.tn
 
-### Advanced Configuration
+🔗 GitHub: https://github.com/samah-saidi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<div align="center">
 
-### `npm run build` fails to minify
+### ⭐ N'oubliez pas de donner une étoile si ce projet vous a aidé !
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Fait avec ❤️ et beaucoup de ☕**
+
+</div>
