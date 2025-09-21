@@ -85,6 +85,7 @@ Une application de gestion de tâches moderne et élégante construite avec Reac
 2. Appuyez sur **Entrée** ou cliquez sur le bouton "➕ Ajouter"
 3. La tâche apparaît instantanément dans la liste
 
+
 ### ✏️ **Modifier une Tâche**
 1. Cliquez sur l'icône **📝** à côté de la tâche
 2. Modifiez le texte dans le champ d'édition
@@ -94,14 +95,23 @@ Une application de gestion de tâches moderne et élégante construite avec Reac
 - Cochez la case à côté de la tâche
 - La tâche sera barrée et déplacée dans les statistiques "Terminées"
 
+
 ### 🗑️ **Supprimer une Tâche**
 - Cliquez sur l'icône **🗑️** à côté de la tâche
 - La tâche sera supprimée définitivement
 
 ### 🔍 **Filtrer les Tâches**
 - **Toutes** : Affiche toutes les tâches
+
+![Résultat](images/result.png)
+
 - **Terminées** : Affiche uniquement les tâches complétées
+
+![Résultat](images/result1.png)
+
 - **En cours** : Affiche uniquement les tâches non terminées
+
+![Résultat](images/result2.png)
 
 ## 🏗️ Architecture du Projet
 
