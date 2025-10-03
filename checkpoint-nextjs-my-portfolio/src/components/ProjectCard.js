@@ -15,7 +15,7 @@ export default function ProjectCard({ project }) {
   return (
     <div className={styles.projectCard}>
       <div className={styles.projectImage}>
-        <img
+        {/* <img
           src={image}
           alt={title}
           onError={(e) => {
@@ -24,7 +24,7 @@ export default function ProjectCard({ project }) {
               'https://via.placeholder.com/400x250/667eea/ffffff?text=' +
               encodeURIComponent(title)
           }}
-        />
+        /> */}
         <div className={styles.projectOverlay}>
           <span className={styles.projectCategory}>{category}</span>
         </div>

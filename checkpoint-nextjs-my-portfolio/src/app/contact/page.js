@@ -34,14 +34,14 @@ export default function Contact() {
     {
       icon: "📧",
       title: "Email",
-      value: "samah.saidi@olytechnicien.tn",
-      link: "mailto:samah.saidi@olytechnicien.tn"
+      value: "samah.saidi@polytechnicien.tn",
+      link: "mailto:samah.saidi@polytechnicien.tn"
     },
     {
       icon: "📱",
       title: "Téléphone",
-      value: "(+216) 93 324 700",
-      link: "tel:+21693324700"
+      value: "(+216) 99 111 222",
+      link: "tel:+216 99 111 222"
     },
     {
       icon: "💼",

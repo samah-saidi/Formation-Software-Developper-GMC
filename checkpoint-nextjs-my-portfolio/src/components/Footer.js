@@ -62,8 +62,8 @@ export default function Footer() {
           <div className={styles.footerSection}>
             <h3 className={styles.footerTitle}>Contact</h3>
             <ul className={styles.contactInfo}>
-              <li>📧 samah.saidi@olytechnicien.tn</li>
-              <li>📱 (+216) 93 324 700</li>
+              <li>📧 samah.saidi@polytechnicien.tn</li>
+              <li>📱 (+216) 99 111 222</li>
               <li>📍 Sousse, Tunisie</li>
             </ul>
           </div>
