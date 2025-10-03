@@ -51,8 +51,8 @@ Assurez-vous d'avoir installé:
 
 1️⃣ **Cloner le repository**
 ```bash
-git clone https://github.com/votre-username/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/samah-saidi/checkpoint-nextjs-my-portfolio.git
+cd checkpoint-nextjs-my-portfolio
 ```
 
 2️⃣ **Installer les dépendances**
@@ -83,7 +83,7 @@ pnpm dev
 ## 📁 Structure du Projet
 
 ```
-portfolio-website/
+checkpoint-nextjs-my-portfolio/
 │
 ├── 📂 src/
 │   ├── 📂 app/
@@ -165,14 +165,14 @@ Mettez à jour les informations dans chaque composant:
 **`src/components/HomePage.tsx`**
 ```tsx
 // Changez le nom
-<h1>Hi, I'm <span>Votre Nom</span></h1>
+<h1>Hi, I'm <span>Samah SAIDI</span></h1>
 
 // Changez la description
-<p>Votre titre professionnel et description</p>
+<p>Étudiante Ingénieure en Data Science & Intelligence Artificielle</p>
 
-// Mettez à jour les liens
+
 <a href="https://github.com/votre-username">GitHub</a>
-<a href="https://linkedin.com/in/votre-username">LinkedIn</a>
+<a href="www.linkedin.com/in/samah-saidi-005196253">LinkedIn</a>
 ```
 
 ### 2️⃣ Compétences Techniques
