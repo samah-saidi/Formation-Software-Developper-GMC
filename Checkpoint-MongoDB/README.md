@@ -1,114 +1,89 @@
-// ============================================
-// MongoDB CHECKPOINT - CRUD OPERATIONS
-// ============================================
+# 📇 MongoDB Contact List Checkpoint
 
-// 1. CREATE DATABASE AND SWITCH TO IT
-use contact
+## 📝 Description
+Bienvenue dans ce projet MongoDB !  
+L’objectif est de **gérer une liste de contacts** en utilisant MongoDB Compass et de pratiquer les opérations **CRUD** (Create, Read, Update, Delete).  
 
-// 2. CREATE COLLECTION (implicitly created with first insert)
-// Collection name: contactlist
+---
 
-// 3. INSERT DOCUMENTS
-db.contactlist.insertMany([
-  {
-    lastName: "Ben",
-    firstName: "Moris",
-    email: "ben@gmail.com",
-    age: 26
-  },
-  {
-    lastName: "Kefi",
-    firstName: "Seif",
-    email: "kefi@gmail.com",
-    age: 15
-  },
-  {
-    lastName: "Emilie",
-    firstName: "brouge",
-    email: "emilie.b@gmail.com",
-    age: 40
-  },
-  {
-    lastName: "Alex",
-    firstName: "brown",
-    age: 4
-  },
-  {
-    lastName: "Denzel",
-    firstName: "Washington",
-    age: 3
-  }
-])
+## 🗄️ Base de données et collection
 
-// ============================================
-// QUERY OPERATIONS
-// ============================================
+- **Database:** `contact` 🏷️  
+- **Collection:** `contactlist` 📋  
 
-// 4. DISPLAY ALL CONTACTS
-db.contactlist.find().pretty()
+---
 
-// 5. DISPLAY ONE CONTACT BY ID
-// Replace <ID> with an actual ObjectId from your database
-// Example: db.contactlist.findOne({_id: ObjectId("507f1f77bcf86cd799439011")})
-db.contactlist.findOne({_id: ObjectId("<PASTE_AN_ID_HERE>")})
+## 👥 Contacts insérés
 
-// Alternative: Find by name
-db.contactlist.findOne({lastName: "Ben"})
+```json
+[
+  { "lastName": "Ben", "firstName": "Moris", "email": "ben@gmail.com", "age": 26 },
+  { "lastName": "Kefi", "firstName": "Seif", "email": "kefi@gmail.com", "age": 15 },
+  { "lastName": "Emilie", "firstName": "brouge", "email": "emilie.b@gmail.com", "age": 40 },
+  { "lastName": "Alex", "firstName": "brown", "age": 4 },
+  { "lastName": "Denzel", "firstName": "Washington", "age": 3 }
+]
+```
+## 🔧 Étapes réalisées
 
-// 6. DISPLAY ALL CONTACTS WITH AGE > 18
-db.contactlist.find({age: {$gt: 18}}).pretty()
+1. Afficher tous les contacts 👀
 
-// 7. DISPLAY CONTACTS WITH AGE > 18 AND NAME CONTAINING "ah"
-db.contactlist.find({
-  age: {$gt: 18},
-  $or: [
-    {firstName: {$regex: "ah", $options: "i"}},
-    {lastName: {$regex: "ah", $options: "i"}}
-  ]
-}).pretty()
+  * Filtre vide {} pour voir toute la liste.
 
-// ============================================
-// UPDATE OPERATIONS
-// ============================================
+2. Afficher un contact par _id 🆔
 
-// 8. CHANGE FIRST NAME FROM "Kefi Seif" TO "Kefi Anis"
-db.contactlist.updateOne(
-  {lastName: "Kefi", firstName: "Seif"},
-  {$set: {firstName: "Anis"}}
-)
+  * Exemple de filtre :
 
-// Verify the update
-db.contactlist.find({lastName: "Kefi"}).pretty()
+```json
+{ "_id": ObjectId("ID_DU_CONTACT") }
+```
+![Résultat](images/capture2.png)
 
-// ============================================
-// DELETE OPERATIONS
-// ============================================
 
-// 9. DELETE CONTACTS WITH AGE < 5
-db.contactlist.deleteMany({age: {$lt: 5}})
+3. Afficher les contacts avec age > 18 🎂
 
-// ============================================
-// FINAL DISPLAY
-// ============================================
+  * Filtre :
 
-// 10. DISPLAY ALL CONTACTS AFTER DELETIONS
-db.contactlist.find().pretty()
+```json
+{ "age": { "$gt": 18 } }
+```
+![Résultat](images/capture3.png)
 
-// ============================================
-// ADDITIONAL USEFUL COMMANDS
-// ============================================
+4. Afficher les contacts avec age > 18 et prénom contenant "ah" 🔍
 
-// Count documents
-db.contactlist.countDocuments()
+  *Filtre :
+```json
+{ 
+  "age": { "$gt": 18 },
+  "firstName": { "$regex": "ah", "$options": "i" } 
+}
+```
+![Résultat](images/capture4.png)
 
-// Show all databases
-show dbs
+5. Modifier le prénom de "Seif" en "Anis" ✏️
 
-// Show all collections in current database
-show collections
+  * Sélection du document → Edit → Update.
 
-// Drop collection (if you need to start over)
-// db.contactlist.drop()
+![Résultat](images/capture5.png)
 
-// Drop database (if you need to start over)
-// db.dropDatabase()
+6. Supprimer les contacts âgés de moins de 5 ans 🗑️
+
+  * Filtre :
+```json
+{ "age": { "$lt": 5 } }
+```
+![Résultat](images/capture6.png)
+
+
+7. Afficher la liste finale des contacts ✅
+
+  * Filtre vide {} pour vérifier les changements.
+
+![Résultat](images/capture7.png)
+
+
+## 🛠️ Outils utilisés
+
+MongoDB Compass 🖥️ : pour visualiser et manipuler les documents.
+
+MongoDB 💾 : version locale ou serveur distant.
