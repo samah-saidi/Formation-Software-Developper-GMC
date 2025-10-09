@@ -55,7 +55,7 @@ L’objectif est de **gérer une liste de contacts** en utilisant MongoDB Compas
 ```json
 { 
   "age": { "$gt": 18 },
-  "firstName": { "$regex": "ah", "$options": "i" } 
+  "firstName": { "$regex": "m", "$options": "i" } 
 }
 ```
 ![Résultat](images/capture4.png)
