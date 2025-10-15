@@ -164,6 +164,66 @@ app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
 | PUT     | /api/users/:id   | Modifier un utilisateur      | `{ "age": 30 }`                                       |
 | DELETE  | /api/users/:id   | Supprimer un utilisateur     | —                                                      |
 
+1️⃣ POST /api/users – Ajouter un nouvel utilisateur
+
+Méthode : POST
+
+Endpoint : http://localhost:5000/api/users
+
+Headers : Content-Type: application/json
+
+Corps JSON :
+```json
+{
+  "name": "Ahmed",
+  "age": 27,
+  "email": "ahmed@example.com"
+}
+```
+Exemple de réponse :
+
+![Résultat](images/post_user.png)
+
+2️⃣ GET /api/users – Récupérer tous les utilisateurs
+
+Méthode : GET
+
+Endpoint : http://localhost:5000/api/users
+
+Corps : Aucun
+
+Exemple de réponse :
+![Résultat](images/get_users.png)
+
+3️⃣ PUT /api/users/:id – Modifier un utilisateur
+
+Méthode : PUT
+
+Endpoint : http://localhost:5000/api/users/68efb57456f652f031a18c83
+
+Headers : Content-Type: application/json
+
+Corps JSON :
+```json
+{
+  "age": 26
+}
+```
+Exemple de réponse :
+
+![Résultat](images/put_user.png)
+
+4️⃣ DELETE /api/users/:id – Supprimer un utilisateur
+
+Méthode : DELETE
+
+Endpoint : http://localhost:5000/api/users/68efb13da33a284b40604043
+
+Corps : Aucun
+
+Exemple de réponse :
+
+![Résultat](images/delete_user.png)
 
 
 ### 📚 Ressources utiles
